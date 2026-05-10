@@ -1,0 +1,51 @@
+Install Tomcat
+Open Eclipse
+
+Create:
+
+Dynamic Web Project
+Add Tomcat server:
+Window → Show View → Servers
+Right click → New → Server
+Select Apache Tomcat
+
+Put home.jsp inside:
+
+WebContent
+
+or
+
+src/main/webapp
+
+Run:
+
+Right Click Project → Run As → Run on Server
+
+Then browser opens like:
+
+http://localhost:8080/ProjectName/home.jsp
+
+
+
+
+
+code
+
+
+<% page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <h1>Hello , This is ENTC Branch Advance Java Batch</h1>
+        <% out.println("Welcome to Advance Java Batch"); %>
+            <h1> Today Time and Date : <%= new java.util.Date() %>
+            </h1>
+    </body>
+
+    </html>
